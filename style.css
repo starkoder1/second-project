@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+body {
+  overflow-x: hidden;
+}
+main {
+}
+
+.background-img {
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/563192ea-ac0e-4906-a865-ba9899ffafad/6b2842d1-2339-4f08-84f6-148e9fcbe01b/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  height: 46rem;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+}
+.background-gradient {
+  height: 46rem;
+  /* opacity: 0.6; */
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.background-overlay {
+  opacity: 0.44;
+  background-color: black;
+  height: 46rem;
+  position: absolute;
+  width: 100%;
+}
+nav {
+  max-width: 76vw;
+  margin: auto;
+}
+.navbar {
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+.logo {
+  width: 9.25rem;
+  position: relative;
+  z-index: 10;
+}
+.navbar .buttons {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+.buttons button {
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.buttons .btn2 {
+  padding: 8px 16px;
+  background-color: #e50914;
+  font-size: 14px;
+  cursor: pointer;
+}
+.buttons .btn1 {
+  margin-right: 1.5rem;
+  background-color: #111010;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 15px;
+  padding-right: 0;
+}
+.lang-icon {
+  /* display: flex; */
+  padding-right: 0.5rem;
+}
+.arrow-down {
+  padding: 0 5px;
+  cursor: pointer;
+}
+.lang-select p {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+/***************************************** MAIN BIG BODY TEXT ***********************************/
+.text-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main {
+  position: relative;
+}
+.big-text {
+  color: white;
+  z-index: 10;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 13rem;
+  font-size: 45px;
+  font-weight: 1000;
+  /* flex-wrap: wrap; */
+  text-align: center;
+  font-family: Helvetica, sans-serif, "Poppins", sans-serif, "Roboto",
+    sans-serif;
+  letter-spacing: -0.1rem;
+}
+.small-text {
+  color: white;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: -0.01rem;
+  font-family: Helvetica, sans-serif, "Poppins", sans-serif, "Roboto",
+    sans-serif;
+}
+#membership {
+  font-size: 1.29rem;
+  margin-top: 1.5rem;
+  letter-spacing: normal;
+  font-weight: 100;
+  font-family: "Nunito Sans", sans-serif;
+}
+.input-field {
+  margin-top: 1rem;
+  display: flex;
+  margin-bottom: 13rem;
+}
+#input-email {
+  padding: 1.3rem 12rem 1.3rem 1.3rem;
+  margin-right: 0.5rem;
+  background: rgba(22, 22, 22, 0.7);
+  border-color: rgba(128, 128, 128, 0.7);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.25rem;
+  color: white;
+  font-size: 1rem;
+}
+input[type="text"]#input-email::placeholder {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.start {
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  font-family: Helvetica, sans-serif, "Poppins", sans-serif, "Roboto",
+    sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  border: transparent solid;
+  font-weight: 600;
+  background-color: rgb(229, 9, 20);
+  color: #fff;
+  cursor: pointer;
+}
+.line-break {
+  background-color: grey;
+  opacity: 0.5;
+  width: 100vw;
+  height: 0.5rem;
+  /* display: flex; */
+  /* flex-grow: 1; */
+  position: relative;
+  z-index: 10;
+}
+/************************** FEATURES CARDS ***************************/
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 75vw;
+  color: white;
+  position: relative;
+  height: 700px;
+}
+.section-img {
+  position: relative;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.section-img img {
+  width: 33vw;
+  /* position: relative; */
+  z-index: 10;
+  height: auto;
+}
+.section-img video {
+  position: absolute;
+
+  /* z-index: -11; */
+  /* top: 4rem; */
+  width: 88%;
+  height: auto;
+  /* left: 0; */
+  right: 0rem;
+  /* overflow: hidden; */
+}
+.big-card-text {
+  font-size: 3rem;
+  font-family: Helvetica, sans-serif, "Poppins", sans-serif, "Roboto",
+    sans-serif;
+  font-weight: 1000;
+  padding-bottom: 0.5rem;
+  letter-spacing: normal;
+}
+.features div {
+  font-size: 1.5rem;
+
+  /* letter-spacing: -0.1rem; */
+  font-family: "Nunito Sans", sans-serif;
+}
+.second {
+  flex-direction: row-reverse;
+}
+.download-box {
+  position: absolute;
+  background-color: black;
+  min-width: 45%;
+  height: 24%;
+  z-index: 10;
+  bottom: 0;
+  display: flex;
+  margin: 0 5.2rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.mobile {
+  flex-direction: column;
+}
+.download-box img {
+  max-height: 100%;
+  max-width: 23%;
+  position: relative;
+}
+.download-box-text p {
+  font-size: 1rem;
+  flex-shrink: 2;
+}
+.download-box-text p:nth-child(2) {
+  font-size: 0.8rem;
+  color: #0071eb;
+  flex-shrink: 2;
+}
+.download-box-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.29rem;
+}
+.third video {
+  max-width: 60%;
+  top: 12%;
+  left: 19%;
+}
+.fourth {
+  flex-direction: row-reverse;
+}
+/************************** FAQ *************************************/
+
+.faq-title {
+  color: white;
+  font-size: 3rem;
+  font-family: Helvetica, sans-serif, "Poppins", sans-serif, "Roboto",
+    sans-serif;
+  font-weight: 1000;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  letter-spacing: normal;
+  text-align: center;
+}
+.questions {
+  display: flex;
+  /* justify-content: center; */
+  color: white;
+  align-items: center;
+  max-width: 75vw;
+  padding: 1.5rem 1rem;
+  background-color: #2d2d2d;
+  /* opacity: 0.5; */
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+.faq-content {
+  font-size: 1.5rem;
+  text-indent: 5px;
+}
+.plus {
+  margin-left: auto;
+}
+.two {
+  margin-bottom: 4rem;
+}
+footer {
+  color: rgb(179 179 179);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.grid-heading {
+  /* text-align: left; */
+  max-width: 75vw;
+  margin: 5rem auto 1.8rem auto;
+  font-size: 1rem;
+}
+.grid-heading span {
+  text-decoration: underline;
+}
+.footer-flex {
+  margin: auto;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 75vw;
+  gap: 10px;
+  margin: auto;
+}
+.column a {
+  color: rgb(179 179 179);
+}
+.footer-btn {
+  max-width: 75vw;
+  margin: 1.8rem auto 2rem auto;
+}
+.netflix-txt {
+  max-width: 75vw;
+  margin: 0 auto 2rem auto;
+  display: block;
+}
+.questions:hover {
+  background-color: rgb(65 65 65);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1280px) {
+  .background-img {
+    background-size: cover;
+  }
+  .download-box {
+    min-width: 70%;
+    height: 20%;
+  }
+  .download-box-text {
+    flex-grow: 1;
+  }
+  .download-box img {
+    max-width: 18%;
+  }
+  .features > div {
+    width: 50%;
+  }
+  .section-img img {
+    width: 45vw;
+  }
+  .third video {
+    left: 17% !important;
+  }
+  .section-img video {
+    left: 12%;
+    width: 80%;
+  }
+
+  .grid-heading,
+  .footer-grid,
+  nav,
+  .features,
+  .big-text,
+  .footer-btn,
+  .netflix-txt,
+  .features .fourth {
+    max-width: 95vw;
+  }
+  .questions {
+    max-width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  html {
+    font-size: 12px;
+  }
+  .big-text {
+    font-size: 3rem;
+    font-weight: 700;
+    width: 85%;
+    margin-top: 8rem;
+  }
+  #input-email {
+    padding: 1.3rem 18rem 1.3rem 1.3rem;
+  }
+  .start {
+    padding: 0rem 1rem 0rem 2rem;
+    font-size: 2rem;
+  }
+  .input-field {
+    height: 5rem;
+  }
+  #membership,
+  .small-text {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .big-card-text {
+    font-size: 2.5rem;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .features div {
+    text-align: center;
+  }
+  .section-img img {
+    width: 80vw;
+  }
+  .section-img {
+    width: 85% !important;
+  }
+  .download-box {
+    min-width: 50% !important;
+    height: 15%;
+    right: 1rem;
+    bottom: 2rem;
+  }
+  .download-box-text {
+    text-align: left !important;
+    padding: 0 1rem;
+  }
+  .download-box img {
+    max-width: 11%;
+  }
+  .download-box p:nth-child(1) {
+    font-size: 1.45rem;
+    font-weight: 600;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+      sans-serif;
+  }
+  .download-box p:nth-child(2) {
+    font-size: 1.19rem;
+    font-weight: 400;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+      sans-serif;
+  }
+  .features {
+    height: 700px;
+  }
+  .description {
+    width: 90vw !important;
+    margin-bottom: 2rem;
+  }
+  .faq-title {
+    font-weight: 700;
+  }
+  .plus {
+    font-weight: 200 !important;
+  }
+  input[type="text"]#input-email::placeholder {
+    font-size: 1.3rem;
+    /* font-weight: 400; */
+    color: gray;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.3rem;
+  }
+  .grid-heading {
+    font-size: 1.5rem;
+  }
+  .netflix-txt {
+    font-size: 1.3rem;
+  }
+  .third video {
+    left: 18% !important;
+  }
+}
+@media only screen and (max-width: 660px) {
+  html {
+    font-size: 10px;
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+
+  .questions {
+    max-width: 85vw;
+  }
+  .input-field {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .start {
+    padding: 0.5rem 0.1rem 0.5rem 0.1rem;
+    font-size: 1.5rem;
+    width: 45%;
+  }
+  .start span {
+    font-size: 30px !important;
+    font-weight: 300;
+  }
+  .red-txt {
+    margin-right: 0.5rem;
+  }
+  .footer-txt {
+    margin-bottom: 5rem;
+  }
+  .lang-select .ftr-btn-txt {
+    font-size: 1.2rem;
+  }
+}
+/* Styles for screens up to 430px wide */
+@media only screen and (max-width: 430px) {
+  .lang-select p {
+    font-size: 0;
+  }
+  .grid-heading,
+  .footer-grid,
+  nav,
+  .features,
+  .big-text,
+  .footer-btn,
+  .netflix-txt,
+  .features .fourth,
+  .questions,
+  .faq-title {
+    max-width: 80vw;
+  }
+
+  .section-img img {
+    width: 90vw;
+  }
+
+  .section-img {
+    width: 112% !important;
+  }
+
+  .third video {
+    min-width: 65%;
+  }
+  #input-email {
+    margin-right: 0;
+    padding: 1.4rem 15rem 1.3rem 1.4rem;
+  }
+  #membership {
+    width: 75vw;
+    font-size: 1.9rem;
+  }
+  .start {
+    padding: 0.5rem 0.1rem 0.5rem 0.1rem;
+    font-size: 2rem;
+    width: 55%;
+  }
+  .red-txt{
+    margin-right: 0;
+  }
+  .download-box img {
+    max-width: 15%;
+  }
+  .download-box {
+    height: 18%;
+    bottom: 1rem;
+  }
+  .features {
+    height: 600px;
+  }
+  .big-card-text {
+    font-size: 3rem;
+  }
+  .features div {
+    font-size: 1.8rem;
+  }
+  .faq-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .faq-content {
+    font-size: 1.8rem;
+  }
+  .background-gradient,
+  .background-img,
+  .background-overlay {
+    height: 55rem;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .grid-heading,
+  .footer-grid,
+  nav,
+  .features,
+  .big-text,
+  .footer-btn,
+  .netflix-txt,
+  .features .fourth,
+  .questions,
+  .faq-title {
+    max-width: 90vw;
+  }
+  .section-img video {
+    left: 12%;
+    width: 75%;
+  }
+  .section-img {
+    width: 103% !important;
+  }
+  .section-img img {
+    width: 91vw;
+  }
+  .third video {
+    min-width: 61%;
+  }
+  .download-box {
+    margin: 0 2.2rem;
+    min-width: 70% !important;
+    margin-left: 3.5rem;
+  }
+  .background-gradient,
+  .background-img,
+  .background-overlay {
+    height: 55rem;
+  }
+}
